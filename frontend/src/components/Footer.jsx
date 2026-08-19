@@ -135,9 +135,15 @@ export default function Footer() {
 
         {/* Bottom Bar & SEO Sitemap Links */}
         <div className="pt-8 mt-8 border-t border-slate-200/80 dark:border-white/[0.06] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-          <p className="flex items-center gap-1 font-medium">
-            © {new Date().getFullYear()} TravelWithNJ.com. Crafted with <Heart className="w-3.5 h-3.5 text-rose-500 fill-rose-500 inline" /> for North Karnataka travelers.
-          </p>
+          <div className="flex flex-col sm:flex-row items-center gap-1.5 sm:gap-2 text-center sm:text-left">
+            <p className="flex items-center gap-1 font-medium">
+              © {new Date().getFullYear()} TravelWithNJ.com. Crafted with <Heart className="w-3.5 h-3.5 text-rose-500 fill-rose-500 inline" /> for North Karnataka travelers.
+            </p>
+            <span className="hidden sm:inline text-slate-400 dark:text-slate-600">•</span>
+            <p className="font-medium text-slate-600 dark:text-slate-400">
+              Built by <span className="text-slate-800 dark:text-slate-200 font-semibold">Nadeem Halbhavi</span> (Mob: <a href="tel:+919738241415" className="hover:text-emerald-500 transition-colors font-semibold text-slate-700 dark:text-slate-300">9738241415</a>)
+            </p>
+          </div>
 
           <div className="flex items-center gap-4 font-medium">
             <a href="/api/seo/sitemap.xml" target="_blank" className="hover:text-emerald-400 transition-colors">
